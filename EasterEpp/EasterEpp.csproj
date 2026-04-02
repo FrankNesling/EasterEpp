@@ -8,4 +8,28 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="images\countries\at.png" />
+    <None Remove="images\countries\ch.png" />
+    <None Remove="images\countries\cn.png" />
+    <None Remove="images\countries\de.png" />
+    <None Remove="images\countries\hr.png" />
+    <None Remove="images\countries\it.png" />
+    <None Remove="images\countries\lt.png" />
+    <None Remove="images\countries\pl.png" />
+    <None Remove="images\countries\tw.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\countries\at.png" />
+    <Resource Include="images\countries\ch.png" />
+    <Resource Include="images\countries\cn.png" />
+    <Resource Include="images\countries\de.png" />
+    <Resource Include="images\countries\hr.png" />
+    <Resource Include="images\countries\it.png" />
+    <Resource Include="images\countries\lt.png" />
+    <Resource Include="images\countries\pl.png" />
+    <Resource Include="images\countries\tw.png" />
+  </ItemGroup>
+
 </Project>

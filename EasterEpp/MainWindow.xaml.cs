@@ -1,24 +1,33 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
-namespace WpfApp1
+namespace EasterEpp
 {
-  /// <summary>
-  /// Interaction logic for MainWindow.xaml
-  /// </summary>
   public partial class MainWindow : Window
   {
+    public GameState State = new GameState();
+
     public MainWindow()
     {
       InitializeComponent();
+      ShowMenu();
+      UpdateScore();
+    }
+
+    public void ShowMenu()
+    {
+      MainContent.Content = new MenuView(this);
+      UpdateScore();
+    }
+
+    public void OpenGame(string imageId)
+    {
+      MainContent.Content = new GameView(this, imageId);
+      UpdateScore();
+    }
+
+    public void UpdateScore()
+    {
+      GlobalScore.Text = $"Total: {State.TotalFound} / {State.TotalAvailable}";
     }
   }
 }

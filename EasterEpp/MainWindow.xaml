@@ -8,11 +8,10 @@
 
   <Grid>
     <StackPanel>
+      <ContentControl x:Name="MainContent"/>
       <TextBlock x:Name="GlobalScore"
                        FontSize="16"
                        Margin="10"/>
-
-      <ContentControl x:Name="MainContent"/>
     </StackPanel>
   </Grid>
 </Window>

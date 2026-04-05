@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Input;
+﻿using System.Windows;
+
+// hr, ch, de, lt, pl, tw, at, cn, it
 
 namespace EasterEpp
 {
@@ -8,6 +8,64 @@ namespace EasterEpp
   {
     public GameState State = new GameState();
     Dictionary<string, GameView> wimmelGames = new();
+    Dictionary<string, int[][]> eeCoords = new Dictionary<string, int[][]>
+    {
+      ["hr"] = new int[][]
+    {
+        new int[] {50,20, 0, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["ch"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["de"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["lt"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["pl"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["tw"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["at"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["cn"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    },
+      ["it"] = new int[][]
+    {
+        new int[] {50,20, 45, 100},
+        new int[] {10,20, 30, 200},
+        new int[] {30,80, 45, 50},
+    }
+    };
+
 
     public MainWindow()
     {
@@ -26,7 +84,7 @@ namespace EasterEpp
     {
       if (!wimmelGames.ContainsKey(imageId))
       {
-        wimmelGames[imageId] = new GameView(this, imageId);
+        wimmelGames[imageId] = new GameView(this, imageId, eeCoords[imageId]);
       }
       
       MainContent.Content = wimmelGames[imageId];

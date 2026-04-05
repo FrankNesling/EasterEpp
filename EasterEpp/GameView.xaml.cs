@@ -10,10 +10,11 @@ namespace EasterEpp
     private MainWindow main;
     private string imageId;
 
-    public GameView(MainWindow mainWindow, string imageId)
+    public GameView(MainWindow mainWindow, string imageId, int[][] eeCoord)
     {
       InitializeComponent();
 
+      // background
       main = mainWindow;
       this.imageId = imageId;
       var uri = new Uri($"/images/wimmelbilder/{imageId}.jpeg", UriKind.Relative);
@@ -21,6 +22,36 @@ namespace EasterEpp
 
       if (!main.State.FoundPerImage.ContainsKey(imageId))
         main.State.FoundPerImage[imageId] = 0;
+
+      // easter eggs
+      for (int i = 0; i < 3; i++)
+      {
+        double scale = eeCoord[i][3] / 100.0;
+
+        var btn = new Button
+        {
+          Width = 30 * scale,
+          Height = 30 * scale,
+          Content = new Image
+          {
+            Source = new BitmapImage(new Uri("/images/ee.png", UriKind.Relative))
+          }
+        };
+
+        Canvas.SetLeft(btn, eeCoord[i][0]);
+        Canvas.SetTop(btn, eeCoord[i][1]);
+
+        btn.Click += FoundObject;
+
+        var image = btn.Content as Image;
+
+        if (image != null)
+        {
+          image.RenderTransform = new RotateTransform(eeCoord[i][2]);
+        }
+
+          GameCanvas.Children.Add(btn);
+      }
     }
 
     private void FoundObject(object sender, RoutedEventArgs e)

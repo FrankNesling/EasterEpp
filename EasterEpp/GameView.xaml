@@ -5,24 +5,7 @@
     <Grid>
     <Image x:Name="MainImage"/>
 
-      <Canvas>
-      <Button Width="30" Height="30"
-                    Canvas.Left="100"
-                    Canvas.Top="150"
-                    Click="FoundObject"
-              Background="Transparent" 
-              BorderThickness="0">
-        <Image Source="images/ee.png"/>
-      </Button>
-
-      <Button Width="30" Height="30"
-                    Canvas.Left="200"
-                    Canvas.Top="250"
-                    Click="FoundObject"
-              Background="Transparent" 
-              BorderThickness="0">
-      <Image Source="images/ee.png"/>
-      </Button>
+    <Canvas x:Name="GameCanvas">
     </Canvas>
 
       <Button Content="Back"

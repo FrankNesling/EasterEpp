@@ -8,10 +8,11 @@
     <Canvas x:Name="GameCanvas">
     </Canvas>
 
-      <Button Content="Back"
+    <Button Content="Back"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Margin="10"
-                Click="Back"/>
-    </Grid>
+                Click="Back"
+            Foreground="White"/>
+  </Grid>
 </UserControl>

@@ -94,6 +94,10 @@ namespace EasterEpp
     public void UpdateScore()
     {
       GlobalScore.Text = $"Total: {State.TotalFound} / {State.TotalAvailable}";
+      if (State.TotalFound == State.TotalAvailable)
+      {
+        GlobalScore.Text = $"Congrats, you found all {State.TotalAvailable}. I love you! Good job! Happy Easter.";
+      }
     }
   }
 }

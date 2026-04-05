@@ -1,10 +1,13 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Input;
 
 namespace EasterEpp
 {
   public partial class MainWindow : Window
   {
     public GameState State = new GameState();
+    Dictionary<string, GameView> wimmelGames = new Dictionary<string, GameView>();
 
     public MainWindow()
     {
@@ -21,7 +24,12 @@ namespace EasterEpp
 
     public void OpenGame(string imageId)
     {
-      MainContent.Content = new GameView(this, imageId);
+      if (!wimmelGames.ContainsKey(imageId))
+      {
+        wimmelGames[imageId] = new GameView(this, imageId);
+      }
+      
+      MainContent.Content = wimmelGames[imageId];
       UpdateScore();
     }
 

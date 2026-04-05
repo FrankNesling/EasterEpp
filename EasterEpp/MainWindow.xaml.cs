@@ -24,9 +24,9 @@ namespace EasterEpp
     },
       ["de"] = new int[][]
     {
-        new int[] {50,20, 90, 90},
-        new int[] {10,20, 30, 200},
-        new int[] {30,80, 45, 50},
+        new int[] {273,145, 0, 70},
+        new int[] {497,177, 53, 60},
+        new int[] {312,470, 15, 50},
     },
       ["lt"] = new int[][]
     {

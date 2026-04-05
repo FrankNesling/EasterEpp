@@ -18,6 +18,7 @@
     <None Remove="images\countries\lt.png" />
     <None Remove="images\countries\pl.png" />
     <None Remove="images\countries\tw.png" />
+    <None Remove="images\ee.png" />
     <None Remove="images\wimmelbilder\at.jpeg" />
     <None Remove="images\wimmelbilder\ch.jpeg" />
     <None Remove="images\wimmelbilder\cn.jpeg" />
@@ -39,6 +40,7 @@
     <Resource Include="images\countries\lt.png" />
     <Resource Include="images\countries\pl.png" />
     <Resource Include="images\countries\tw.png" />
+    <Resource Include="images\ee.png" />
     <Resource Include="images\wimmelbilder\at.jpeg" />
     <Resource Include="images\wimmelbilder\ch.jpeg" />
     <Resource Include="images\wimmelbilder\cn.jpeg" />

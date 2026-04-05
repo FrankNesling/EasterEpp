@@ -7,7 +7,7 @@ namespace EasterEpp
   public partial class MainWindow : Window
   {
     public GameState State = new GameState();
-    Dictionary<string, GameView> wimmelGames = new Dictionary<string, GameView>();
+    Dictionary<string, GameView> wimmelGames = new();
 
     public MainWindow()
     {

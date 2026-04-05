@@ -32,6 +32,13 @@ namespace EasterEpp
 
       btn.IsEnabled = false;
 
+      // remove image
+      var image = btn.Content as Image;
+
+      if (image != null)
+        image.Source = null;
+
+      // update scores
       main.State.TotalFound++;
       main.State.FoundPerImage[imageId]++;
 

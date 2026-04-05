@@ -12,20 +12,20 @@ namespace EasterEpp
     {
       ["hr"] = new int[][]
     {
-        new int[] {50,345, 0, 80},
+        new int[] {50,345, 30, 80},
         new int[] {550,40, 30, 30},
         new int[] {300,380, 0, 60},
     },
       ["ch"] = new int[][]
     {
-        new int[] {677,300, 73, 90},
-        new int[] {275,350, 30, 200},
+        new int[] {657,303, 73, 90},
+        new int[] {260,365, 30, 200},
         new int[] {410,35, 0, 100},
     },
       ["de"] = new int[][]
     {
         new int[] {273,145, 0, 70},
-        new int[] {497,177, 53, 60},
+        new int[] {486,179, 53, 60},
         new int[] {312,470, 15, 50},
     },
       ["lt"] = new int[][]
@@ -42,9 +42,9 @@ namespace EasterEpp
     },
       ["tw"] = new int[][]
     {
-        new int[] {75,30, 330, 70},
-        new int[] {484,406, 90, 50},
-        new int[] {728,62, 320, 65},
+        new int[] {79,30, 330, 70},
+        new int[] {470,406, 90, 50},
+        new int[] {730,55, 320, 75},
     },
       ["at"] = new int[][]
     {
@@ -55,12 +55,12 @@ namespace EasterEpp
       ["cn"] = new int[][]
     {
         new int[] {190,370, 0, 80},
-        new int[] {425,377, 300, 70},
-        new int[] {765,176, 90, 70},
+        new int[] {426,363, 300, 70},
+        new int[] {745,176, 90, 70},
     },
       ["it"] = new int[][]
     {
-        new int[] {220,10, 290, 70},
+        new int[] {225,-5, 290, 70},
         new int[] {258,255, 0, 30},
         new int[] {690,265, 0, 120},
     }

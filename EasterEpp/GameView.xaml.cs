@@ -47,7 +47,7 @@ namespace EasterEpp
 
         if (image != null)
         {
-          image.RenderTransform = new RotateTransform(eeCoord[i][2]);
+          image.LayoutTransform = new RotateTransform(eeCoord[i][2]);
         }
 
           GameCanvas.Children.Add(btn);

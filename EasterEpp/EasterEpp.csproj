@@ -18,6 +18,15 @@
     <None Remove="images\countries\lt.png" />
     <None Remove="images\countries\pl.png" />
     <None Remove="images\countries\tw.png" />
+    <None Remove="images\wimmelbilder\at.jpeg" />
+    <None Remove="images\wimmelbilder\ch.jpeg" />
+    <None Remove="images\wimmelbilder\cn.jpeg" />
+    <None Remove="images\wimmelbilder\de.jpeg" />
+    <None Remove="images\wimmelbilder\hr.jpeg" />
+    <None Remove="images\wimmelbilder\it.jpeg" />
+    <None Remove="images\wimmelbilder\lt.jpeg" />
+    <None Remove="images\wimmelbilder\pl.jpeg" />
+    <None Remove="images\wimmelbilder\tw.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +39,15 @@
     <Resource Include="images\countries\lt.png" />
     <Resource Include="images\countries\pl.png" />
     <Resource Include="images\countries\tw.png" />
+    <Resource Include="images\wimmelbilder\at.jpeg" />
+    <Resource Include="images\wimmelbilder\ch.jpeg" />
+    <Resource Include="images\wimmelbilder\cn.jpeg" />
+    <Resource Include="images\wimmelbilder\de.jpeg" />
+    <Resource Include="images\wimmelbilder\hr.jpeg" />
+    <Resource Include="images\wimmelbilder\it.jpeg" />
+    <Resource Include="images\wimmelbilder\lt.jpeg" />
+    <Resource Include="images\wimmelbilder\pl.jpeg" />
+    <Resource Include="images\wimmelbilder\tw.jpeg" />
   </ItemGroup>
 
 </Project>

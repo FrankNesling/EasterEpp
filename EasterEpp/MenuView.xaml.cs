@@ -13,15 +13,15 @@ namespace EasterEpp
       main = mainWindow;
     }
 
-    private void Open1(object sender, RoutedEventArgs e) => main.OpenGame("img1");
-    private void Open2(object sender, RoutedEventArgs e) => main.OpenGame("img2");
-    private void Open3(object sender, RoutedEventArgs e) => main.OpenGame("img3");
-    private void Open4(object sender, RoutedEventArgs e) => main.OpenGame("img4");
-    private void Open5(object sender, RoutedEventArgs e) => main.OpenGame("img5");
-    private void Open6(object sender, RoutedEventArgs e) => main.OpenGame("img6");
-    private void Open7(object sender, RoutedEventArgs e) => main.OpenGame("img6");
-    private void Open8(object sender, RoutedEventArgs e) => main.OpenGame("img6");
-    private void Open9(object sender, RoutedEventArgs e) => main.OpenGame("img6");
+    private void Open1(object sender, RoutedEventArgs e) => main.OpenGame("hr");
+    private void Open2(object sender, RoutedEventArgs e) => main.OpenGame("ch");
+    private void Open3(object sender, RoutedEventArgs e) => main.OpenGame("de");
+    private void Open4(object sender, RoutedEventArgs e) => main.OpenGame("lt");
+    private void Open5(object sender, RoutedEventArgs e) => main.OpenGame("pl");
+    private void Open6(object sender, RoutedEventArgs e) => main.OpenGame("tw");
+    private void Open7(object sender, RoutedEventArgs e) => main.OpenGame("at");
+    private void Open8(object sender, RoutedEventArgs e) => main.OpenGame("cn");
+    private void Open9(object sender, RoutedEventArgs e) => main.OpenGame("it");
 
   }
 }

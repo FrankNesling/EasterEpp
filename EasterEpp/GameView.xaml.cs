@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace EasterEpp
@@ -15,9 +16,8 @@ namespace EasterEpp
 
       main = mainWindow;
       this.imageId = imageId;
-
-      MainImage.Source = new BitmapImage(
-          new System.Uri($"Images/{imageId}.jpg", System.UriKind.Relative));
+      var uri = new Uri($"/images/wimmelbilder/{imageId}.jpeg", UriKind.Relative);
+      MainImage.Source = new BitmapImage(uri);
 
       if (!main.State.FoundPerImage.ContainsKey(imageId))
         main.State.FoundPerImage[imageId] = 0;

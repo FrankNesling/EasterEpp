@@ -12,9 +12,9 @@ namespace EasterEpp
     {
       ["hr"] = new int[][]
     {
-        new int[] {50,20, 0, 100},
-        new int[] {10,20, 30, 200},
-        new int[] {30,80, 45, 50},
+        new int[] {50,345, 0, 80},
+        new int[] {550,40, 30, 30},
+        new int[] {300,380, 0, 60},
     },
       ["ch"] = new int[][]
     {
